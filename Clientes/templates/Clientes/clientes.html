@@ -1,0 +1,28 @@
+{% extends 'Clientes/base.html' %}
+
+{% block content %}
+
+<section class="main-container">
+    <h1>Clientes</h1>
+    <div class="container mt-3">
+        <div class="row justify-content-center align-items-center">
+            
+            {% for i in clientesLlave %}
+            <div class="card mb-4 col-md-4 mx-3">
+                
+                <div>
+                    <h5>{{i.Nombre}}</h5>
+                    <p>{{i.Rut}}</p>
+                    <p>{{i.Telefono}}</p>
+                    <p>{{i.Email}}</p>
+                    <p>{{i.Direccion}}</p>
+                    <p>{{i.Genero}}</p>
+                </div>
+
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% endblock %}

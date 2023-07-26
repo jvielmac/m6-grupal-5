@@ -1,0 +1,53 @@
+html,
+body {
+  height: 100%;
+  /* background-color: greenyellow; */
+  background: linear-gradient(to bottom right, rgb(0, 255, 21), pink)
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #b52bac;
+  color: aqua;
+}
+
+.card p {
+  margin-bottom: 0;
+}
+
+.footer {
+  margin-top: auto;
+  background: rgb(34, 0, 88);
+}
+
+.navbar {
+  background-color: rgb(34, 0, 88);
+}
+
+.textNav a:visited {
+  color: rgb(0, 255, 98);
+}
+
+.textNav a {
+  color: rgb(235, 238, 236);
+}
+
+.fab {
+  color: rgb(0, 255, 42);
+}
+
+.log {
+  font-size: 12rem;
+}
+
+
+
+
+

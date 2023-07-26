@@ -1,0 +1,21 @@
+{% extends 'Clientes/base.html' %}
+{% block content %}
+
+<div class="main-container">
+
+    <form method= "POST">
+        <h2>Formulario Proveedores</h2>
+        {% csrf_token %}
+        {{formulario.as_p}}
+        <button class="btn btn-success" type="Submit">Ingresar</button>
+    </form>
+    {% if messages %}
+    <ul>
+        {% for message in messages %}
+            <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+     {% endif %}
+</div>
+
+{% endblock %}

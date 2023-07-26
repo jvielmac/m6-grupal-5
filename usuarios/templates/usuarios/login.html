@@ -1,0 +1,28 @@
+{% extends "Clientes/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<div class="main-container">
+    <h1>Accede a tu cuenta</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mx-auto">
+                    <form method="POST">
+                        <div class="form-group">
+                            {% csrf_token %}
+                            {{form|crispy}}
+                        </div>
+                        <button type="submit" class="btn btn-success my-2">Log in</button>
+                    </form>
+                    <div class="text-center">
+                        <p>
+                            Necesitas una cuenta? <a href="{% url 'registro' %}">Registrate</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+
+{% endblock %}
